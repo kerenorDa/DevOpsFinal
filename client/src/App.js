@@ -1,7 +1,5 @@
-import logo from './logo.svg';
-import './App.css';
-
 import React, { useState } from 'react';
+import './App.css';
 
 function App() {
   const [flights, setFlights] = useState([]);
@@ -23,9 +21,10 @@ function App() {
   return (
     <div style={{ padding: '20px' }}>
       <h1>Flight Booking System</h1>
-      
+
+      {/* כפתור לחיפוש טיסות */}
       <button onClick={searchFlights}>Search Flights</button>
-      
+
       <div style={{ marginTop: '20px' }}>
         <h2>Available Flights</h2>
         {flights.length > 0 ? (
